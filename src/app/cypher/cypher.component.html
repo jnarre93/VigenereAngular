@@ -1,0 +1,13 @@
+<form >
+  Clave:<br>
+  <input type="text" name="key" [(ngModel)]="key">
+  <br><br>
+  Texto:<br>
+  <textarea name="texto" [(ngModel)]="plainText" ></textarea>
+  <br><br>
+  Resultado:<br>
+  <textarea name="resultado" readonly [(ngModel)]="cipherText" ></textarea>
+  <br><br>
+  <input type="submit" (click) = "encriptar()">
+  <input type="submit" (click) = "desencriptar()">
+</form> 
