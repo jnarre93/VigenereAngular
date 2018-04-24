@@ -1,0 +1,21 @@
+.formStyle{
+   font-family: 'Overpass', sans-serif;
+}
+
+.encButton{
+    background-color: #008FCF;
+}
+
+
+.encBtn{
+    background-color: #F59300;
+    color: white;
+}
+
+.formTitle{
+    padding:10px 10px 0px 10px;
+    font-family: 'Nothing You Could Do', cursive;
+    margin-bottom: 20px;
+    background-color: #343a40; 
+    color:white
+}

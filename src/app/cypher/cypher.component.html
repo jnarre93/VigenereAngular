@@ -1,13 +1,51 @@
-<form >
-  Clave:<br>
-  <input type="text" name="key" [(ngModel)]="key">
-  <br><br>
-  Texto:<br>
-  <textarea name="texto" [(ngModel)]="plainText" ></textarea>
-  <br><br>
-  Resultado:<br>
-  <textarea name="resultado" readonly [(ngModel)]="cipherText" ></textarea>
-  <br><br>
-  <input type="submit" (click) = "encriptar()">
-  <input type="submit" (click) = "desencriptar()">
-</form> 
+<div class="container-fluid">
+
+
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-sm-6 offset-3" style="background-color:#ededed;">
+        <!--Title-->
+        <div class="row" style="padding:10px 10px 0px 10px">
+          <div class="col-sm-12 " style="background-color: #008FCF; color:white">
+            <h1 class="text-center" style="font-family: 'Nothing You Could Do',cursive">Vigenère</h1>
+          </div>
+        </div>
+
+        <!--body-->
+
+        <div class="row" style="padding:0px 10px 10px 10px">
+          <div class="col-sm-12 " style="background-color:white;padding:20px 10px">
+            <form class="formStyle" >
+              <div class="form-group">
+                <label>Clave</label>
+                <input type="text" class="form-control" name="key" [(ngModel)]="key" placeholder="Clave" aria-describedby="basic-addon1">
+              </div>
+              
+              <label>Texto</label>
+              <div class="form-group">
+                <span class="input-group-addon" id="basic-addon1"></span>
+                <textarea class="form-control" name="texto" [(ngModel)]="plainText" placeholder="Texto" aria-describedby="basic-addon1"></textarea>
+              </div>
+              
+              <label>Resultado</label>
+              <div class="form-group">
+                <span class="input-group-addon" id="basic-addon1"></span>
+                <textarea class="form-control" name="resultado" readonly [(ngModel)]="cipherText" aria-describedby="basic-addon1"></textarea>
+              </div>
+              <div class="col-sm-12 text-center">
+                <button type="button" class="btn encBtn" (click)="encriptar()">Encriptar</button>
+                <button type="button" class="btn encBtn" (click)="desencriptar()">Desencriptar</button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+</div>
